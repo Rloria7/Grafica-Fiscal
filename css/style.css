@@ -1,0 +1,9 @@
+body {
+      background-color: #FFf;
+    }
+    h1{
+      font-weight: 600;
+      background: -webkit-linear-gradiemt(120deg,#ff00f7,#00d0ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color transparent;
+    }

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Grafica Fiscal Julio 2019</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <h1 class="text-center pt-3">Salidas Fiscal Julio 2019 Bultos 61,458</h1>
+    <div class="container">
+      <!--Grid row-->
+      <div class="row d-flex justify-content-center mt-5">
+        <!--Grid column-->
+        <div class="col-md-10">
+        <canvas id="barChart"></canvas>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- /Start your project here-->
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+
+<script type="text/javascript">
+    //bar
+var ctxB = document.getElementById("barChart").getContext('2d');
+var myBarChart = new Chart(ctxB, {
+type: 'bar',
+data: {
+  labels: ["Johnson", " Griffith", "Calvo", "Ecolab", "Felipe M ", "Diversey", "Cryovac", "Allergan", "GBB", "Abbott", "Gano IT", "Pablo M", "Vinos"],
+  datasets: [{
+    label: 'Salidas Fiscal 2019',
+    data: [18305, 17687, 7740, 5353, 4018, 3755, 1559,1269,648,637, 450, 19, 18],
+    backgroundColor: [
+      '#424242',
+      '#23a0b6',
+      '#356284',
+      '#424242',
+      '#23a0b6',
+      '#356284',
+      '#424242',
+      '#23a0b6',
+      '#356284',
+      '#424242',
+      '#23a0b6',
+      '#356284',
+      '#229954',
+      '#2C3E50',
+      '#4E342E'
+    ],
+    // borderColor: [
+    //   'rgba(255,99,132,1)',
+    //   'rgba(54, 162, 235, 1)',
+    //   'rgba(255, 206, 86, 1)',
+    //   'rgba(75, 192, 192, 1)',
+    //   'rgba(153, 102, 255, 1)',
+    //   'rgba(255, 159, 64, 1)'
+    // ],
+    borderWidth: 1
+  }]
+},
+options: {
+  scales: {
+    yAxes: [{
+      ticks: {
+        beginAtZero: true
+      }
+    }]
+  }
+}
+});
+    </script>
+    <footer>
+      <p class="text-center">&copy Ricardo  2019</p>
+    </footer>
+  </body>
+
+</html>
